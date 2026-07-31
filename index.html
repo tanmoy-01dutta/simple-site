@@ -1,87 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Developer</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tanmoy Dutta — Portfolio</title>
+<meta name="description" content="Tanmoy Dutta — Portfolio. Howrah, West Bengal." />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav class="tabbar" id="tabbar">
-    <span class="tab active" data-target="hero">index.html</span>
-    <span class="tab" data-target="about">about.js</span>
-    <span class="tab" data-target="projects">projects.js</span>
-    <span class="tab" data-target="contact">contact.js</span>
-  </nav>
+<!-- faint ledger rules covering the whole page -->
+<div class="ledger-bg" aria-hidden="true"></div>
 
-  <header id="hero" class="hero">
-    <div class="editor-window">
-      <div class="editor-chrome">
-        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-        <span class="filename">hello.js</span>
+<div class="stamp" aria-hidden="true">
+  <span>T·D</span>
+</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">T. Dutta<span class="brand-dot">.</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about" data-nav>About</a>
+      <a href="#education" data-nav>Education</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO — the open ledger page -->
+  <section class="hero wrap" id="hero">
+    <div class="hero-page">
+      <div class="hero-left">
+        <p class="eyebrow mono">FOLIO NO. 01 &nbsp;·&nbsp; HOWRAH, WEST BENGAL</p>
+        <h1 class="hero-name">
+          Tanmoy<br />Dutta
+        </h1>
+        <p class="hero-role">Higher Secondary graduate (Commerce)<span class="cursor" id="typeCursor">|</span></p>
+        <p class="hero-desc">
+          Starting my career from Howrah with a foundation in Commerce —
+          organised, numbers-minded, and ready to learn on the job.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="mailto:duttatanmoy512@gmail.com" class="btn btn-ghost">Email directly</a>
+        </div>
       </div>
-      <div class="editor-body">
-        <pre><code><span class="ln">1</span><span class="kw">const</span> <span class="fn">developer</span> = {
-<span class="ln">2</span>  name: <span class="str">"Your Name"</span>,
-<span class="ln">3</span>  role: <span class="str">"Full-Stack Developer"</span>,
-<span class="ln">4</span>  focus: [<span class="str">"JavaScript"</span>, <span class="str">"Python"</span>, <span class="str">"Design"</span>],
-<span class="ln">5</span>  <span class="fn">say</span>: () =&gt; <span id="typed" class="str"></span><span class="cursor">|</span>
-<span class="ln">6</span>};</code></pre>
+      <div class="hero-right" aria-hidden="true">
+        <div class="ledger-card">
+          <div class="ledger-row"><span class="mono">DATE</span><span class="mono">PARTICULARS</span></div>
+          <div class="ledger-divider"></div>
+          <div class="ledger-row"><span class="mono">2024</span><span>Completed H.S. (Commerce)</span></div>
+          <div class="ledger-row"><span class="mono">2026</span><span>Building this portfolio</span></div>
+          <div class="ledger-row"><span class="mono">—</span><span>Next entry: your opportunity</span></div>
+          <div class="ledger-divider dashed"></div>
+          <div class="ledger-row total"><span class="mono">STATUS</span><span>Open to work</span></div>
+        </div>
       </div>
     </div>
-    <p class="hero-sub">Scroll down to run the rest of the file.</p>
-  </header>
-
-  <section id="about" class="section about">
-    <h2><span class="brace">{</span> about <span class="brace">}</span></h2>
-    <p>
-      I'm a developer who likes turning ideas into things people can actually click on.
-      This starter page is a blank canvas — swap this paragraph for your own story:
-      what you build, what you're learning, and what you're looking for next.
-    </p>
-    <ul class="tags">
-      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>GitHub Pages</li>
-    </ul>
   </section>
 
-  <section id="projects" class="section projects">
-    <h2><span class="brace">{</span> projects <span class="brace">}</span></h2>
-    <div class="card-grid">
-      <article class="card">
-        <h3>Project One</h3>
-        <p>Short description of what it does and why it exists.</p>
-        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
-      </article>
-      <article class="card">
-        <h3>Project Two</h3>
-        <p>Short description of what it does and why it exists.</p>
-        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
-      </article>
-      <article class="card">
-        <h3>Project Three</h3>
-        <p>Short description of what it does and why it exists.</p>
-        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
-      </article>
+  <!-- ABOUT -->
+  <section class="section wrap" id="about">
+    <div class="section-head">
+      <span class="mono tag">ENTRY 002</span>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm Tanmoy Dutta, based in Howrah, West Bengal. I recently completed my
+        Higher Secondary education with Commerce, and I'm now looking to put
+        that foundation to work — whether that's an entry-level role, an
+        internship, or a chance to keep learning a new skill.
+        I show up reliably, pay attention to detail, and I'm comfortable
+        picking up new tools quickly.
+      </p>
+      <ul class="about-facts">
+        <li><span class="mono">Based in</span><strong>Howrah, West Bengal, India</strong></li>
+        <li><span class="mono">Education</span><strong>H.S. (Commerce)</strong></li>
+        <li><span class="mono">Looking for</span><strong>Entry-level roles / internships</strong></li>
+        <li><span class="mono">Email</span><strong><a href="mailto:duttatanmoy512@gmail.com">duttatanmoy512@gmail.com</a></strong></li>
+      </ul>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
-    <h2><span class="brace">{</span> contact <span class="brace">}</span></h2>
-    <p>Open to opportunities and collaborations. Reach out any time.</p>
-    <div class="links">
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+  <!-- EDUCATION -->
+  <section class="section wrap" id="education">
+    <div class="section-head">
+      <span class="mono tag">ENTRY 003</span>
+      <h2>Education</h2>
+    </div>
+    <div class="ledger-table">
+      <div class="ledger-table-head mono">
+        <span>Year</span><span>Qualification</span><span>Stream</span><span>Status</span>
+      </div>
+      <div class="ledger-table-row">
+        <span class="mono">2024</span>
+        <span>Higher Secondary (10+2)</span>
+        <span>Commerce</span>
+        <span class="status-chip">Completed</span>
+      </div>
+      <div class="ledger-table-row placeholder">
+        <span class="mono">—</span>
+        <span>Add your next qualification here</span>
+        <span>—</span>
+        <span class="status-chip muted">In progress?</span>
+      </div>
+    </div>
+    <p class="hint">Edit these rows in <code>index.html</code> — add a graduation, a diploma, or a course as you complete it.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section wrap" id="skills">
+    <div class="section-head">
+      <span class="mono tag">ENTRY 004</span>
+      <h2>Skills</h2>
+    </div>
+    <p class="hint hint-top">These are starter placeholders — swap them for the tools and strengths you actually have.</p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <span class="mono skill-no">01</span>
+        <h3>Computer Basics</h3>
+        <p>MS Word, Excel, and everyday internet &amp; email tools.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-no">02</span>
+        <h3>Commerce Fundamentals</h3>
+        <p>Basic accounting, bookkeeping, and business studies from H.S.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-no">03</span>
+        <h3>Communication</h3>
+        <p>Comfortable in Bengali, Hindi, and English.</p>
+      </div>
+      <div class="skill-card">
+        <span class="mono skill-no">04</span>
+        <h3>Work Ethic</h3>
+        <p>Punctual, organised, and quick to pick up new processes.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JS.</p>
-  </footer>
+  <!-- CONTACT -->
+  <section class="section wrap" id="contact">
+    <div class="section-head">
+      <span class="mono tag">ENTRY 005</span>
+      <h2>Contact</h2>
+    </div>
+    <div class="contact-card">
+      <div class="contact-left">
+        <p>
+          Have a role, internship, or opportunity in mind? I'd like to hear
+          from you — send a message and I'll reply from Howrah.
+        </p>
+        <ul class="contact-list">
+          <li><span class="mono">Email</span><a href="mailto:duttatanmoy512@gmail.com">duttatanmoy512@gmail.com</a></li>
+          <li><span class="mono">Location</span><span>Howrah, West Bengal, India</span></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label class="field">
+          <span class="mono">Name</span>
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label class="field">
+          <span class="mono">Email</span>
+          <input type="email" name="email" required placeholder="you@example.com" />
+        </label>
+        <label class="field">
+          <span class="mono">Message</span>
+          <textarea name="message" rows="4" required placeholder="Say hello..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Send message</button>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="mono">Balance carried forward — <span id="year"></span> &copy; Tanmoy Dutta</p>
+    <p class="mono footer-loc">Howrah, West Bengal</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
