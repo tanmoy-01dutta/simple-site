@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="tabbar" id="tabbar">
+    <span class="tab active" data-target="hero">index.html</span>
+    <span class="tab" data-target="about">about.js</span>
+    <span class="tab" data-target="projects">projects.js</span>
+    <span class="tab" data-target="contact">contact.js</span>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="editor-window">
+      <div class="editor-chrome">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="filename">hello.js</span>
+      </div>
+      <div class="editor-body">
+        <pre><code><span class="ln">1</span><span class="kw">const</span> <span class="fn">developer</span> = {
+<span class="ln">2</span>  name: <span class="str">"Your Name"</span>,
+<span class="ln">3</span>  role: <span class="str">"Full-Stack Developer"</span>,
+<span class="ln">4</span>  focus: [<span class="str">"JavaScript"</span>, <span class="str">"Python"</span>, <span class="str">"Design"</span>],
+<span class="ln">5</span>  <span class="fn">say</span>: () =&gt; <span id="typed" class="str"></span><span class="cursor">|</span>
+<span class="ln">6</span>};</code></pre>
+      </div>
+    </div>
+    <p class="hero-sub">Scroll down to run the rest of the file.</p>
+  </header>
+
+  <section id="about" class="section about">
+    <h2><span class="brace">{</span> about <span class="brace">}</span></h2>
+    <p>
+      I'm a developer who likes turning ideas into things people can actually click on.
+      This starter page is a blank canvas — swap this paragraph for your own story:
+      what you build, what you're learning, and what you're looking for next.
+    </p>
+    <ul class="tags">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git</li><li>GitHub Pages</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section projects">
+    <h2><span class="brace">{</span> projects <span class="brace">}</span></h2>
+    <div class="card-grid">
+      <article class="card">
+        <h3>Project One</h3>
+        <p>Short description of what it does and why it exists.</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="card">
+        <h3>Project Two</h3>
+        <p>Short description of what it does and why it exists.</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+      <article class="card">
+        <h3>Project Three</h3>
+        <p>Short description of what it does and why it exists.</p>
+        <a href="#" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2><span class="brace">{</span> contact <span class="brace">}</span></h2>
+    <p>Open to opportunities and collaborations. Reach out any time.</p>
+    <div class="links">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
